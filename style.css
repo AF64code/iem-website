@@ -40,6 +40,13 @@ header.topbar {
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1.25rem;
+    background: transparent;
+    box-shadow: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topbar--scrolled,
+header.topbar:hover {
     background: rgba(19, 19, 19, 0.92);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
@@ -51,8 +58,8 @@ header.topbar {
 }
 
 .topbar__logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .topbar__logo img {
@@ -152,7 +159,7 @@ header.topbar {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 240px;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     align-items: center;
     max-width: 1100px;
@@ -160,7 +167,7 @@ header.topbar {
 }
 
 .hero__content {
-    max-width: 560px;
+    
 }
 
 .hero__label {
@@ -493,6 +500,20 @@ details[open] .accordion__icon {
     .topbar__social {
         display: none;
     }
+
+    .hero__icon--left {
+        width: 30vw;
+        height: 30vw;
+        top: 50%;
+        right: -10vw;
+    }
+
+    .hero__icon--right {
+        top: -5vw;
+        left: 50vw;
+        width: 30vw;
+        height: 30vw;
+    }
 }
 
 .topbar__social {
@@ -530,5 +551,113 @@ details[open] .accordion__icon {
     opacity: 1;
     transform: translateY(0);
     transition: opacity 1s, transform 1s;
+}
+
+.hero__content {
+    
+}
+
+.hero__icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    
+}
+
+.hero__icon--left {
+    width: 20vw;
+    height: 20vw;
+    top: 40%;
+    right: 5vw;
+    transform: translateY(-50%);
+    border: none;
+}
+
+.hero__icon--right {
+    top: -5vw;
+    left: 25vw;
+    width: 25vw;
+    height: 25vw;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .hero__icon--left {
+        width: 40vw;
+        height: 40vw;
+        top: 60%;
+        right: -10vw;
+    }
+
+    .hero__icon--right {
+        top: -5vw;
+        left: 40vw;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .hero__heading {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        text-shadow: none;
+    }
+
+    .panel {
+        padding: 1.25rem 1rem;
+    }
+
+    .qr-card {
+        width: 180px;
+        padding: 1rem;
+    }
+
+    .qr-card__image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .topbar__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero {
+        padding: 3rem 1rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2.5rem 1rem 1.5rem;
+    }
+
+    .hero__heading {
+        font-size: clamp(2.2rem, 12vw, 3rem);
+    }
+
+    .hero__tagline {
+        font-size: 0.9rem;
+    }
+
+    .panel__title {
+        font-size: 1.5rem;
+    }
+
+    .panel {
+        padding: 1rem 0.75rem;
+    }
+
+    .topbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 0.85rem 1.2rem;
+    }
+
+    .qr-card {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
