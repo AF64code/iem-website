@@ -26,7 +26,13 @@
 
         <div class="topbar__actions">
             <nav class="topbar__nav" aria-label="Main">
-                <a href="#overview">Home</a>
+                <div class="dropdown">
+                    <a href="#overview">Home <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#about-us">About Us</a>
+                        <a href="#objective">Objective</a>
+                    </div>
+                </div>
                 <a href="#timeline">Event Timeline</a>
                 <a href="#faqs">FAQs</a>
                 <a href="#application">Application Form</a>
@@ -75,6 +81,21 @@
         <section id="overview" class="panel section--hidden">
             <h2 class="panel__title">Welcome to Employability Series 5.0</h2>
             <p>This booklet is designed to guide you through Day 3 of the event, where we explore career advancement for engineering students. Use the sections below to quickly find the details you need.</p>
+        </section>
+
+        <section id="about-us" class="panel section--hidden">
+            <h2 class="panel__title">About Us</h2>
+            <p>IEM-UTM Student Section (IEM-UTMSS) is a student-run organization that represents the Institution of Engineers, Malaysia (IEM) at Universiti Teknologi Malaysia (UTM). Our mission is to promote the engineering profession and provide a platform for students to develop their professional and soft skills.</p>
+        </section>
+
+        <section id="objective" class="panel section--hidden">
+            <h2 class="panel__title">Objective</h2>
+            <ul>
+                <li>To guide Year 1 to Year 4 engineering students in actively planning their career paths, equipping them with the essential skills and readiness needed for the professional workforce.</li>
+                <li>To provide participants with actionable lessons, insider knowledge, and practical mentorship from professionals, ensuring they have the guidance required to succeed in the engineering industry.</li>
+                <li>To assist students in identifying and securing suitable job opportunities that perfectly align with their specific engineering disciplines, technical strengths, and professional interests.</li>
+                <li>To facilitate meaningful networking between students and industry leaders, building strong professional relationships that open doors for local employment and overseas career advancements.</li>
+            </ul>
         </section>
 
         <section id="timeline" class="panel section--hidden">
