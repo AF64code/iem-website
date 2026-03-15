@@ -52,6 +52,10 @@
 
     <section class="hero">
         <div class="hero__inner">
+            <div class="hero__icons">
+                <img src="icons/icon interviewer.jpg" alt="Interviewer Icon" class="hero__icon hero__icon--left">
+                <img src="icons/icon maynifyer.png" alt="Magnifier Icon" class="hero__icon hero__icon--right">
+            </div>
             <div class="hero__content">
                 <h1 class="hero__heading">
                     <span class="hero__line">EXPLORACE</span>
@@ -207,6 +211,15 @@
 
         document.querySelectorAll('.section--hidden').forEach((section) => {
             observer.observe(section);
+        });
+
+        const topbar = document.querySelector('.topbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                topbar.classList.add('topbar--scrolled');
+            } else {
+                topbar.classList.remove('topbar--scrolled');
+            }
         });
     </script>
 </body>
