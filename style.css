@@ -553,10 +553,6 @@ details[open] .accordion__icon {
     transition: opacity 1s, transform 1s;
 }
 
-.hero__content {
-    
-}
-
 .hero__icon {
     position: absolute;
     width: 80px;
